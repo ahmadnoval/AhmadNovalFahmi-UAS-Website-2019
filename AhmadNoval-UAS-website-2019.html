@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contoh Array Object</title>
+	<script language="javascript" >
+		document.writeln("<h2>Cuara hari ini</h2>");
+		var cuaca = { "Cuaca" : [
+		{ "Kota" : "Banda Aceh", 
+			"siang" : "Cerah Berawan",
+			"malam" : "Berawan",
+			"dini_hari" : "Berawan",
+			"suhu" : "23 - 34",
+			"Kelembapan" : "60 - 95"},
+		{"Kota": "Denpasar",
+        	"siang": "Cerah",
+        	"malam": "Cerah berawan",
+        	"dini_hari": "Berawan",
+        	"suhu": "25 - 33",
+        	"Kelembapan": "60 - 85"},
+		{"Kota": "Serang",
+        	"siang": "Berawan",
+        	"malam": "Berawan",
+        	"dini_hari": "Berawan",
+        	"suhu": "24 - 33",
+        	"Kelembapan": "55 - 95"},
+		{"Kota": "Bengkulu",
+        	"siang": "Hujan ringan",
+        	"malam": "Hujan ringan",
+        	"dini_hari": "Cerah berawan",
+        	"suhu": "24 - 32",
+        	"Kelembapan": "55 - 95"},
+		{"Kota": "Yogyakarta",
+        	"siang": "Cerah berawan",
+        	"malam": "Berawan",
+        	"dini_hari": "Cerah berawan",
+        	"suhu": "23 - 32",
+        	"Kelembapan": "55 - 90"},
+		{"Kota": "Jakarta Pusat",
+        	"siang": "Berawan",
+        	"malam": "Berawan",
+        	"dini_hari": "Cerah berawan",
+        	"suhu": "25 - 31",
+        	"Kelembapan": "70 - 90"}
+		]
+		};
+		
+		var i = 0;
+		document.writeln("<table border='2'><tr>");
+		for(i=0;i<cuaca.Cuaca.length;i++)
+		{
+		document.writeln("<td>");
+		document.writeln("<table border='1' width=100 >");
+		document.writeln("<tr><td><b>Kota</b></td><td width=50>" + cuaca.Cuaca[i].Kota+"</td></tr>");
+		document.writeln("<tr><td><b>Siang</b></td><td width=50>" + cuaca.Cuaca[i].siang+"</td></tr>");
+		document.writeln("<tr><td><b>Malam</b></td><td width=50>" + cuaca.Cuaca[i].malam+"</td></tr>");
+		document.writeln("<tr><td><b>Dini_hari</b></td><td width=50>" + cuaca.Cuaca[i].dini_hari+"</td></tr>");
+		document.writeln("<tr><td><b>Suhu</b></td><td width=50>" + cuaca.Cuaca[i].suhu+"</td></tr>");
+		document.writeln("<tr><td><b>Kelembapan</b></td><td width=50>" + cuaca.Cuaca[i].Kelembapan+"</td></tr>");
+		document.writeln("</table>");
+		document.writeln("</td>");
+		}
+		document.witreln("</tr></table>");
+	</script>
+
+</head>
+<body>
+</body>
+</html>
